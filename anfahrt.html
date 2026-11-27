@@ -27,7 +27,7 @@
 <meta name="twitter:image" content="https://www.bulau-bau.de/assets/img/og-bild.jpg">
 <link rel="preload" href="assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=20261127">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "GeneralContractor", "@id": "https://www.bulau-bau.de/#firma", "name": "Bulau Bau GmbH", "description": "Meisterbetrieb für Trockenbau und Akustikarbeiten aus Bersenbrück: Wände einziehen, Dachausbau, abgehängte Decken und Schallschutzdecken.", "url": "https://www.bulau-bau.de/", "logo": "https://www.bulau-bau.de/assets/img/logo-bulau-bau.webp", "image": "https://www.bulau-bau.de/assets/img/og-bild.jpg", "telephone": "+49 5439 18767", "email": "info@bulau-bau.de", "address": {"@type": "PostalAddress", "streetAddress": "Am Bahnhof 9", "postalCode": "49593", "addressLocality": "Bersenbrück", "addressRegion": "Niedersachsen", "addressCountry": "DE"}, "hasMap": "https://www.google.com/maps/search/?api=1&query=Am+Bahnhof+9%2C+49593+Bersenbr%C3%BCck%2C+Deutschland", "areaServed": "Bersenbrück und Umgebung bis ca. 200 km, unter anderem Osnabrück, Oldenburg, Bremen, Münster und Bielefeld", "foundingDate": "2007", "numberOfEmployees": {"@type": "QuantitativeValue", "value": 5}, "founder": {"@type": "Person", "name": "Adrian Bulaur"}, "knowsAbout": ["Trockenbau", "Akustikdecken", "Dachausbau", "Abgehängte Decken", "Schallschutz"]}, {"@type": "WebPage", "@id": "https://www.bulau-bau.de/anfahrt#seite", "url": "https://www.bulau-bau.de/anfahrt", "name": "Anfahrt", "description": "Anfahrt zur Bulau Bau GmbH in Bersenbrück", "inLanguage": "de-DE", "about": {"@id": "https://www.bulau-bau.de/#firma"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://www.bulau-bau.de/"}, {"@type": "ListItem", "position": 2, "name": "Anfahrt", "item": "https://www.bulau-bau.de/anfahrt"}]}]}</script>
 </head>
 <body>
@@ -35,7 +35,7 @@
 <header class="header">
   <div class="wrap header__innen">
     <a class="logo" href="./" aria-label="Zur Startseite"><img class="logo__zeichen" src="assets/img/logo-zeichen.webp" alt="" width="240" height="146"><span class="logo__text"><span class="logo__name">BULAU</span><span class="logo__zusatz">Bau GmbH</span></span></a>
-    <button class="nav__schalter" type="button" aria-expanded="false" aria-controls="hauptnav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Menü</button>
+    <button class="nav__schalter" type="button" aria-expanded="false" aria-controls="hauptnav"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Menü</button>
     <nav class="nav" id="hauptnav" aria-label="Hauptmenü">
       <ul class="nav__liste"><li><a href="leistungen">Leistungen</a></li><li><a href="referenzen">Referenzen</a></li><li><a href="ueber-uns">Über uns</a></li><li><a href="jobs">Jobs</a></li><li><a href="anfahrt" aria-current="page">Anfahrt</a></li></ul>
       <a class="knopf knopf--klein" href="kontakt">Projekt anfragen</a>
@@ -55,9 +55,9 @@
   <div class="wrap anfahrt">
     <div class="maps einblenden" id="maps" data-src="https://www.google.com/maps?q=Am+Bahnhof+9,+49593+Bersenbr%C3%BCck,+Deutschland&amp;z=16&amp;output=embed">
       <div class="maps__hinweis">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
         <p class="maps__adresse">Bulau Bau GmbH<br>Am Bahnhof 9, 49593 Bersenbrück</p>
-        <button class="knopf knopf--hell" type="button" id="maps-laden"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 4 3 6.5v13.5l6-2.5 6 2.5 6-2.5V4l-6 2.5z"/><path d="M9 4v13.5M15 6.5V20"/></svg> Karte laden</button>
+        <button class="knopf knopf--hell" type="button" id="maps-laden"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 4 3 6.5v13.5l6-2.5 6 2.5 6-2.5V4l-6 2.5z"/><path d="M9 4v13.5M15 6.5V20"/></svg> Karte laden</button>
         <p class="maps__klein">Beim Laden der Karte werden Daten, zum Beispiel Ihre IP-Adresse, an Google übertragen. Mehr dazu in der <a href="datenschutz#google-maps">Datenschutzerklärung</a>.</p>
       </div>
     </div>
@@ -66,16 +66,16 @@
         <h2>Adresse</h2>
         <address class="anfahrt__adresse">Bulau Bau GmbH<br>Am Bahnhof 9<br>49593 Bersenbrück</address>
         <div class="anfahrt__links">
-          <a class="mehr" href="https://www.google.com/maps/dir/?api=1&amp;destination=Am+Bahnhof+9%2C+49593+Bersenbr%C3%BCck%2C+Deutschland" target="_blank" rel="noopener">Route planen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a class="mehr" href="https://www.google.com/maps/search/?api=1&amp;query=Am+Bahnhof+9%2C+49593+Bersenbr%C3%BCck%2C+Deutschland" target="_blank" rel="noopener">In Google Maps öffnen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="mehr" href="https://www.google.com/maps/dir/?api=1&amp;destination=Am+Bahnhof+9%2C+49593+Bersenbr%C3%BCck%2C+Deutschland" target="_blank" rel="noopener">Route planen <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="mehr" href="https://www.google.com/maps/search/?api=1&amp;query=Am+Bahnhof+9%2C+49593+Bersenbr%C3%BCck%2C+Deutschland" target="_blank" rel="noopener">In Google Maps öffnen <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
       <div class="direkt__block einblenden">
         <h2>Gut zu wissen</h2>
         <ul class="wege">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 16.5V12l2-5h12l2 5v4.5"/><path d="M3 12h18v4.5H3z"/><circle cx="7.5" cy="16.5" r="1.8"/><circle cx="16.5" cy="16.5" r="1.8"/></svg><div><strong>Mit dem Auto</strong>Geben Sie „Am Bahnhof 9, Bersenbrück" ins Navi ein.</div></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="3" width="12" height="13" rx="3"/><path d="M6 10h12M9.5 13.2h.01M14.5 13.2h.01M8 21l2-3.5M16 21l-2-3.5"/></svg><div><strong>Mit dem Zug</strong>Der Bahnhof Bersenbrück liegt an der Bahnstrecke zwischen Osnabrück und Oldenburg. Unsere Adresse ist gleich dort.</div></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 3.5h3.5l1.8 4.5-2.3 1.4a11 11 0 0 0 6.6 6.6l1.4-2.3 4.5 1.8V19a1.5 1.5 0 0 1-1.6 1.5A16.5 16.5 0 0 1 3.5 5.1 1.5 1.5 0 0 1 5 3.5z"/></svg><div><strong>Vorher anrufen</strong><a href="tel:+49543918767">05439 18767</a>, dann ist sicher jemand da.</div></li>
+          <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 16.5V12l2-5h12l2 5v4.5"/><path d="M3 12h18v4.5H3z"/><circle cx="7.5" cy="16.5" r="1.8"/><circle cx="16.5" cy="16.5" r="1.8"/></svg><div><strong>Mit dem Auto</strong>Geben Sie „Am Bahnhof 9, Bersenbrück" ins Navi ein.</div></li>
+          <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="3" width="12" height="13" rx="3"/><path d="M6 10h12M9.5 13.2h.01M14.5 13.2h.01M8 21l2-3.5M16 21l-2-3.5"/></svg><div><strong>Mit dem Zug</strong>Der Bahnhof Bersenbrück liegt an der Bahnstrecke zwischen Osnabrück und Oldenburg. Unsere Adresse ist gleich dort.</div></li>
+          <li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 3.5h3.5l1.8 4.5-2.3 1.4a11 11 0 0 0 6.6 6.6l1.4-2.3 4.5 1.8V19a1.5 1.5 0 0 1-1.6 1.5A16.5 16.5 0 0 1 3.5 5.1 1.5 1.5 0 0 1 5 3.5z"/></svg><div><strong>Vorher anrufen</strong><a href="tel:+49543918767">05439 18767</a>, dann ist sicher jemand da.</div></li>
         </ul>
       </div>
     </aside>
@@ -100,7 +100,7 @@
       <h2 id="aufruf-titel">Wir kommen auch zu Ihnen</h2>
       <p>Für Ihr Projekt müssen Sie nicht zu uns fahren. Schreiben Sie uns, und wir kommen zur Besichtigung vorbei.</p>
     </div>
-    <a class="knopf" href="kontakt">Projekt anfragen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="knopf" href="kontakt">Projekt anfragen <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
 </section>
 </main>
@@ -110,7 +110,7 @@
       <div>
         <a class="footer__logo" href="./" aria-label="Zur Startseite"><img src="assets/img/logo-bulau-bau.webp" alt="Logo der Bulau Bau GmbH, Trockenbau und Akustikarbeiten" width="600" height="413" loading="lazy"></a>
         <p class="footer__satz">Trockenbau und Akustik aus Bersenbrück. Meisterbetrieb seit 2007.</p>
-        <p class="footer__partner">In Kooperation mit <a href="https://reinigung-norkin.de/" target="_blank" rel="noopener">Reinigung Norkin</a></p>
+        <p class="footer__partner">In Kooperation mit <a href="https://reinigung-norkin.de/" target="_blank" rel="noopener">Norkin Reinigung</a></p>
       </div>
       <div>
         <h2>Adresse</h2>
@@ -142,7 +142,7 @@
     </div>
   </div>
 </footer>
-<script src="assets/js/main.js" defer></script>
-<script src="assets/js/spiel.js" defer></script>
+<script src="assets/js/main.js?v=20261127" defer></script>
+<script src="assets/js/spiel.js?v=20261127" defer></script>
 </body>
 </html>

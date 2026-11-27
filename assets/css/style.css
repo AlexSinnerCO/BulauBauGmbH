@@ -672,21 +672,24 @@ figure.ref figcaption { display: grid; gap: .3rem; }
 /* Lange Woerter wie "Verbraucherstreitbeilegung" auf sehr schmalen Handys umbrechen */
 .recht h2 { hyphens: auto; -webkit-hyphens: auto; overflow-wrap: anywhere; }
 
-/* Kooperationspartner */
-.partner-sektion { padding-block: clamp(2.5rem, 1.5rem + 4vw, 4.5rem); }
-.partner { display: grid; grid-template-columns: auto 1fr auto; gap: 1.5rem 2rem; align-items: center; padding: clamp(1.4rem, 1rem + 2vw, 2.2rem); border: 1px solid var(--linie); border-left: 5px solid var(--gelb); border-radius: var(--radius); background: var(--weiss); }
-.partner__zeichen { width: 4rem; height: 4rem; border-radius: 50%; display: grid; place-items: center; background: var(--gips); color: var(--blau); }
-.partner__zeichen svg { width: 2rem; height: 2rem; }
-.partner__text { display: grid; gap: .6rem; min-width: 0; }
-.partner__text h2 { font-size: clamp(1.4rem, 1.2rem + 1vw, 1.9rem); }
-.partner__text p { color: var(--text-2); max-width: 40rem; }
-.partner__link { display: inline-flex; align-items: center; gap: .5rem; min-height: 3rem; padding: .7rem 1.2rem; border: 2px solid var(--blau); border-radius: var(--radius); color: var(--blau); font-weight: 700; text-decoration: none; white-space: nowrap; transition: background-color .2s ease, color .2s ease; }
-.partner__link svg { width: 1.1em; height: 1.1em; }
-.partner__link:hover { background: var(--blau); color: var(--weiss); }
+/* Kooperationspartner: schmale Leiste */
+.partner-sektion { padding-block: 0 clamp(2.5rem, 1.5rem + 3vw, 4rem); }
+.partner {
+  display: flex; align-items: center; gap: .9rem 1.4rem; flex-wrap: wrap;
+  padding: .9rem 1.2rem; border: 1px solid var(--linie); border-radius: var(--radius);
+  background: var(--weiss); color: var(--text-2); text-decoration: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.partner:hover { border-color: #aab6cc; box-shadow: var(--schatten); color: var(--text-2); }
+.partner__label { font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--blau); }
+.partner__logo { display: flex; align-items: center; }
+.partner__logo img { height: 2.4rem; width: auto; max-width: 10rem; object-fit: contain; }
+.partner__wort { font-family: var(--f-head); font-weight: 800; font-size: 1.25rem; letter-spacing: .04em; color: var(--nacht); line-height: 1; display: flex; align-items: baseline; gap: .35rem; }
+.partner__wort small { font-family: var(--f-text); font-weight: 600; font-size: .8rem; letter-spacing: 0; color: var(--text-2); }
+.partner__text { flex: 1 1 14rem; font-size: .95rem; min-width: 0; }
+.partner__pfeil { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: 50%; background: var(--gips); color: var(--blau); flex: none; transition: background-color .2s ease, color .2s ease; }
+.partner__pfeil svg { width: 1rem; height: 1rem; }
+.partner:hover .partner__pfeil { background: var(--blau); color: var(--weiss); }
 .footer__partner { margin-top: .8rem; font-size: .92rem; }
 .footer__partner a { color: var(--gelb); }
-@media (max-width: 820px) {
-  .partner { grid-template-columns: 1fr; }
-  .partner__zeichen { width: 3.2rem; height: 3.2rem; }
-  .partner__link { justify-content: center; white-space: normal; }
-}
+@media (max-width: 520px) { .partner__text { flex-basis: 100%; order: 3; } .partner__pfeil { margin-left: auto; } }
