@@ -694,6 +694,6 @@ figure.ref figcaption { display: grid; gap: .3rem; }
 .footer__partner a { color: var(--gelb); }
 @media (max-width: 520px) { .partner__text { flex-basis: 100%; order: 3; } .partner__pfeil { margin-left: auto; } }
 .partner__foto { flex: none; display: inline-flex; }
-.partner__foto img { width: 3.2rem; height: 3.2rem; border-radius: 50%; object-fit: cover; border: 2px solid var(--gelb); transition: transform .25s ease; }
+.partner__foto img { width: 4.5rem; height: 4.5rem; border-radius: 50%; object-fit: cover; border: 3px solid var(--gelb); transition: transform .25s ease; }
 .partner:hover .partner__foto img { transform: scale(1.06); }
-@media (max-width: 520px) { .partner__foto img { width: 2.8rem; height: 2.8rem; } }
+
